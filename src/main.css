@@ -13,7 +13,7 @@ h1 {
 
 .title{
 	display: block;
-	font-family: Georgia;
+	font-family: 'Times New Roman', Times, serif;
 	-webkit-text-stroke: 1px #2E8B93;
     background-color: #464E58;
 	position: absolute;

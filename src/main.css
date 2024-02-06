@@ -51,11 +51,13 @@ h1 {
 }
 .items {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	grid-gap: 20px;
+	justify-content: center;
 	top: 50%;
-	left: 40%;
-}
+	left: 50%; /* Adjusted for centering */
+	transform: translate(-50%, -50%); /* Center the grid */
+  }
 
 .item1 {
 	display: inline-block;

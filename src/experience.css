@@ -1,0 +1,379 @@
+.menu {
+    position: absolute;
+    display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 10px;
+    top: 0;
+	left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #4e4e4f;
+    padding: 10px;
+  }
+  .menumini {
+    width: 100%;
+    height: 90%;
+    display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+    background-color:  #0C0D12;
+    color: #ffffff;
+  }
+  
+  .menumininow {
+    width: 100%;
+    height: 90%;
+    display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+    background-color:  rgb(237, 203, 13);
+    color: #0C0D12;
+  }
+  .menumini:hover {
+    background-color: rgb(237, 203, 13);
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    line-height: 50px;
+    color: #0C0D12;
+  }
+  
+  body {
+	padding: 100px;
+	font-family: Arial;
+    background-color: #000000;
+			background-image: url('alpha53.jpeg');
+			background-size: cover;
+			color: #ffffff;
+}
+
+.title{
+	display: block;
+	font-family: Georgia;
+	-webkit-text-stroke: 1px #2E8B93;
+    background-color: #464E58;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	height: 30%;
+	width: 50%;
+	font-size: 50px;
+}
+.unit1 {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	top: 25%;
+    left: 16%;
+  }
+  @keyframes float1L {
+	from {left: 16%; top: 25%; width:240px; height: 240px;}
+	to {left: 5%; top: 10%; width:535px; height: 280px;}
+}
+@keyframes float1B {
+	from {left: 5%; top: 10%; width:535px; height: 280px;}
+	to {left: 16%; top: 25%; width:240px; height: 240px;}
+}
+  .blockborder1 {
+	position: absolute;
+	display: block;
+	top: 61px;
+	left: 0%;
+    width: 90%;
+	height: 50%;
+	padding:5px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(237, 203, 13);
+	clip-path: polygon(40% 0%, 100% 0%, 100% 82%, 75% 82%, 65% 100%, 11% 100%, 11% 60%, 35% 60%, 40% 50%);
+  }
+  @keyframes floatO {
+	from {width: 1px; height: 1px}
+	to {width: 100%; height: 100%}
+}
+@keyframes floatI {
+	from {width: 100%; height: 100%}
+	to {width: 1px; height: 1px}
+}
+
+
+  .block1 {
+	top: 3%;
+	left: 3%;
+	position: absolute;
+    width: 95%;
+	height: 93%;
+	background-color: #0C0D12;
+	color: #ffffff;
+  }
+  .dummy1 {
+    width: 245px;
+	height: 300px;
+	float: left;
+	background-color: rgb(237, 203, 13);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 70% 63%, 20% 63%, 20% 100%, 0% 100%);
+	shape-outside: polygon(0% 0%, 100% 0%, 100% 40%, 70% 63%, 20% 63%, 20% 100%, 0% 100%);
+  }
+  .dummy2 {
+    width: 180px;
+	height: 100%;
+	float: right;
+	background-color: rgb(237, 203, 13);
+	clip-path: polygon(28% 82%, 100% 82%, 100% 100%, 0% 100%, 0% 100%);
+	shape-outside: polygon(28% 82%, 100% 82%, 100% 100%, 0% 100%, 0% 100%);
+  }
+
+  .unit2 {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 20%;
+	height: 65%;
+	bottom: 15%;
+    left: 28%;;
+  }
+  @keyframes float2L {
+	from {left: 28%; bottom: 15%;}
+	to {left: 15%; bottom: 5%;}
+}
+@keyframes float2B {
+	from {left: 15%; bottom: 5%;}
+	to {left: 28%; bottom: 15%;}
+}
+  .blockborder2 {
+	position: absolute;
+	display: block;
+	bottom: 50px;
+	left: 24%;
+    width: 1px;
+	height: 1px;
+	padding:5px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(237, 203, 13);
+  }
+  .block {
+    width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #0C0D12;
+	color: #ffffff;
+  }
+
+  .unit3 {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 20%;
+	height: 65%;
+	top: 25%;
+    left: 40%;
+  }
+  @keyframes float3L {
+	from {top: 25%;}
+	to {top: 10%;}
+}
+@keyframes float3B {
+	from {top: 10%;}
+	to {top: 25%;}
+}
+  .blockborder3 {
+	position: absolute;
+	display: block;
+	top: 50px;
+	left: 25%;
+    width: 1px;
+	height: 1px;
+	padding:5px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(237, 203, 13);
+  }
+
+  .unit4 {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 20%;
+	height: 65%;
+	bottom: 15%;
+    left: 52%;
+  }
+  @keyframes float4L {
+	from {left: 52%; bottom: 15%;}
+	to {left: 63%; bottom: 5%;}
+}
+@keyframes float4B {
+	from {left: 63%; bottom: 5%;}
+	to {left: 52%; bottom: 15%;}
+}
+  .blockborder4 {
+	position: absolute;
+	display: block;
+	bottom: 50px;
+	right: 25%;
+    width: 1px;
+	height: 1px;
+	padding:5px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(237, 203, 13);
+  }
+
+
+  .unit5 {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 20%;
+	height: 65%;
+	top: 25%;
+    left: 64%;
+  }
+  @keyframes float5L {
+	from {left: 64%; top: 25%;}
+	to {left: 75%; top: 10%;}
+}
+@keyframes float5B {
+	from {left: 75%; top: 10%;}
+	to {left: 64%; top: 25%;}
+}
+  .blockborder5 {
+	position: absolute;
+	display: block;
+	top: 50px;
+	right: 25%;
+    width: 1px;
+	height: 1px;
+	padding:5px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(237, 203, 13);
+  }
+
+
+.subtitle{
+	font-size: 20px;
+	-webkit-text-stroke: 0px;
+}
+.img{
+	shape-outside: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);;
+	clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+}
+.img1{
+	height: 250px;
+	width: 250px;
+	left: 0%;
+	top: 0%;
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	shape-outside: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);;
+}
+
+.img2{
+	bottom: 0%;
+	left: 0%;
+	height: 250px;
+	width: 250px;
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.img3{
+	top: 0%;
+	left: 0%;
+	height: 250px;
+	width: 250px;
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.img4{
+	bottom: 0%;
+	left: 0%;
+	height: 250px;
+	width: 250px;
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.img5{
+	top: 0%;
+	left: 0%;
+	height: 250px;
+	width: 250px;
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+	padding: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/*--- ScrollFade Specific ---*/
+
+.scrollFade {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.scrollFade--visible {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--animate {
+	transition: opacity 0.4s ease-in-out;
+}
+
+/*------*/
+
+@media(max-width: 750px) {
+	body {
+		padding: 100px 25px;
+	}
+
+	.items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.item--wide {
+		grid-column: 1;
+	}
+}

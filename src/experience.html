@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shane Tendo</title>
+	<link rel="stylesheet" type="text/css" href="experience.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class = "menu">
+        <a href = "index.html">
+        <div class="menumini">Home</div>
+        </a>
+        <a href = "bio.html">
+        <div class="menumini">Bio</div>
+        </a>
+        <a href = "skills.html">
+        <div class="menumini">Skills</div>
+        </a>
+        <a href = "experience.html">
+            <div class="menumininow">Experience</div>
+            </a>
+            <a href = "hardware.html">
+            <div class="menumini">Hardware</div>
+            </a>
+            <a href = "software.html">
+            <div class="menumini">Software</div>
+            </a>
+            <a href = "quantum.html">
+                <div class="menumini">Quantum</div>
+                </a>
+</div>
+
+<div class = "unit1" id ="unit1">  
+    <div id ="box1" class = "blockborder1" >
+        <div class = "block1">
+        <div class = "dummy1"></div>
+        <div class = "dummy2"></div>
+        <p>
+            Summer internship 2021: Aga Khan Development Network IT Department <br>
+        Supervisors:<br> 1. Sanjeeb Mohanty<br> 2. Eduardo Nhancale <br> 3. Alex Oyugi <br>
+        Understanding what makes a campus area network including company emails, configuring "Bring your own devices", secure wifi
+        Linking audio system, fibre optic cables , server maintenance
+        Quote from Mr. Alex: "Always innovate in this industry. Keep refreshing yourself to be relevant each day."<br>
+        </p>
+        
+</div>
+    </div>
+<button class = "img1" onclick="float1()">
+    <img src = "Map.png" width="100%" height="100%" class="img">
+</button>
+</div>
+
+<div class = "unit2" id ="unit2">  
+    <div id ="box2" class = "blockborder2" >
+        <div class = "block">
+        Qubit by Qubit summer camp 2021: Set up by IBM quantum, studied under Dr. Akshay Agarwal and Dr. Giselle Fontes Evilsizer
+    </div>
+    </div>
+<button class = "img2" onclick="float2()">
+    <img src = "Map.png" width="100%" height="100%" class="img">
+</button>
+</div>
+
+<div class = "unit3" id ="unit3">  
+    <div id ="box3" class = "blockborder3" >
+        <div class = "block">
+            Scorpius Pharmacy with Hakim Kizito and Maureen Birungi. PHP <br>
+        </div>
+    </div>
+<button class = "img3" onclick="float3()">
+    <img src = "Map.png" width="100%" height="100%" class="img">
+</button>
+</div>
+
+<div class = "unit4" id ="unit4">  
+    <div id ="box4" class = "blockborder4" >
+        <div class = "block">
+            Archiving - Union University Library: If you're wondering why this is included on this resume- website, it is because
+            data organization is remarkably similar to library organization, and I know the library of congress system <br>
+        </div>
+    </div>
+<button class = "img4" onclick="float4()">
+    <img src = "Map.png" width="100%" height="100%" class="img">
+</button>
+</div>  
+
+<div class = "unit5" id ="unit5">  
+    <div id ="box5" class = "blockborder5" >
+        <div class = "block">
+            "To what extent will IBM Quantum system 1 impact scientific research at CERN" <br>
+        </div>
+    </div>
+<button class = "img5" onclick="float5()">
+    <img src = "Map.png" width="100%" height="100%" class="img">
+</button>
+</div> 
+
+<script>
+    let clicked1 = false;
+    let clicked2 = false;
+    let clicked3 = false;
+    let clicked4 = false;
+    let clicked5 = false;
+     
+    function float1() {
+    var unit = document.getElementById("unit1");   
+    var box = document.getElementById("box1"); 
+  if (!clicked1) {
+    box.style.animationName = "floatO";
+    box.style.animationDuration = "2s";
+    box.style.width = "100%";
+    box.style.height = "100%";
+  } else {
+    box.style.animationName = "floatI";
+    box.style.animationDuration = "2s";
+    box.style.width = "50%";
+    box.style.height = "50%";
+  }
+  if (!clicked1) {
+        unit.style.animationName = "float1L";
+        unit.style.animationDuration = "2s";
+        unit.style.top = "10%";
+        unit.style.left = "5%";
+        unit.style.width = "535px";
+        unit.style.height = "280px";
+        clicked1 = true;
+    } else {
+        unit.style.animationName = "float1B";
+        unit.style.animationDuration = "2s";
+        unit.style.top = "25%";
+        unit.style.left = "16%";
+        unit.style.width = "240px";
+        unit.style.height = "240px";
+        clicked1 = false;
+    }
+}
+function float2() {
+    var unit = document.getElementById("unit2");   
+    var box = document.getElementById("box2"); 
+  if (!clicked2) {
+    box.style.animationName = "floatO";
+    box.style.animationDuration = "2s";
+    box.style.width = "70%";
+    box.style.height = "100%";
+  } else {
+    box.style.animationName = "floatI";
+    box.style.animationDuration = "2s";
+    box.style.width = "1px";
+    box.style.height = "1px";
+  }
+  if (!clicked2) {
+        unit.style.animationName = "float2L";
+        unit.style.animationDuration = "2s";
+        unit.style.bottom = "5%";
+        unit.style.left = "15%";
+        clicked2 = true;
+    } else {
+        unit.style.animationName = "float2B";
+        unit.style.animationDuration = "2s";
+        unit.style.bottom = "15%";
+        unit.style.left = "28%";
+        clicked2 = false;
+    }
+}
+function float3() {
+    var unit = document.getElementById("unit3");   
+    var box = document.getElementById("box3"); 
+  if (!clicked3) {
+    box.style.animationName = "floatO";
+    box.style.animationDuration = "2s";
+    box.style.width = "70%";
+    box.style.height = "100%";
+  } else {
+    box.style.animationName = "floatI";
+    box.style.animationDuration = "2s";
+    box.style.width = "1px";
+    box.style.height = "1px";
+  }
+  if (!clicked3) {
+        unit.style.animationName = "float3L";
+        unit.style.animationDuration = "2s";
+        unit.style.top = "10%";
+        clicked3 = true;
+    } else {
+        unit.style.animationName = "float3B";
+        unit.style.animationDuration = "2s";
+        unit.style.top = "25%";
+        clicked3 = false;
+    }
+}
+function float4() {
+    var unit = document.getElementById("unit4");   
+    var box = document.getElementById("box4"); 
+  if (!clicked4) {
+    box.style.animationName = "floatO";
+    box.style.animationDuration = "2s";
+    box.style.width = "70%";
+    box.style.height = "100%";
+  } else {
+    box.style.animationName = "floatI";
+    box.style.animationDuration = "2s";
+    box.style.width = "1px";
+    box.style.height = "1px";
+  }
+  if (!clicked4) {
+        unit.style.animationName = "float4L";
+        unit.style.animationDuration = "2s";
+        unit.style.bottom = "5%";
+        unit.style.left = "63%";
+        clicked4 = true;
+    } else {
+        unit.style.animationName = "float4B";
+        unit.style.animationDuration = "2s";
+        unit.style.bottom = "15%";
+        unit.style.left = "52%";
+        clicked4 = false;
+    }
+}
+function float5() {
+    var unit = document.getElementById("unit5");   
+    var box = document.getElementById("box5"); 
+  if (!clicked5) {
+    box.style.animationName = "floatO";
+    box.style.animationDuration = "2s";
+    box.style.width = "70%";
+    box.style.height = "100%";
+  } else {
+    box.style.animationName = "floatI";
+    box.style.animationDuration = "2s";
+    box.style.width = "1px";
+    box.style.height = "1px";
+  }
+  if (!clicked5) {
+        unit.style.animationName = "float5L";
+        unit.style.animationDuration = "2s";
+        unit.style.top = "10%";
+        unit.style.left = "75%";
+        clicked5 = true;
+    } else {
+        unit.style.animationName = "float5B";
+        unit.style.animationDuration = "2s";
+        unit.style.top = "25%";
+        unit.style.left = "64%";
+        clicked5 = false;
+    }
+}
+    </script>
+</body>
+</html>

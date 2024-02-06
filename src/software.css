@@ -1,0 +1,227 @@
+.menu {
+    position: absolute;
+    display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 10px;
+    top: 0;
+	left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #4e4e4f;
+    padding: 10px;
+  }
+  .menumini {
+    width: 100%;
+    height: 90%;
+    display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+    background-color:  #0C0D12;
+    color: #ffffff;
+  }
+  
+  .menumininow {
+    width: 100%;
+    height: 90%;
+    display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+    background-color:  rgb(237, 203, 13);
+    color: #0C0D12;
+  }
+  .menumini:hover {
+    background-color: rgb(237, 203, 13);
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    line-height: 50px;
+    color: #0C0D12;
+  }
+  
+  body {
+	padding: 100px;
+	font-family: Arial;
+    background-color: #000000;
+			background-image: url('alpha53.jpeg');
+			background-size: cover;
+			color: #ffffff;
+}
+
+.title{
+	display: block;
+	font-family: Georgia;
+	-webkit-text-stroke: 1px #2E8B93;
+    background-color: #464E58;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	height: 30%;
+	width: 50%;
+	font-size: 50px;
+}
+.table {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+  }
+  .textdiv {
+    width: 100%;
+	height: 75px;
+  }
+
+  
+  @keyframes fadeInL {
+	from {
+	  opacity: 0;
+	  transform: translateX(-100%);
+	}
+  
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+
+@keyframes fadeInR {
+	from {
+	  opacity: 0;
+	  transform: translateX(200%);
+	}
+  
+	to {
+	  opacity: 1;
+	  transform: translateX(50%);
+	}
+  }
+
+.subtitle{
+	font-size: 20px;
+	-webkit-text-stroke: 0px;
+}
+.textbox{
+	display: flex;
+	top: 10%;
+	left: 20%;
+	height: 15%;
+	padding: 5px;
+	background: rgb(237, 203, 13);
+	width: 100%;
+}
+
+.textbox2l {
+	flex-basis: 70%;
+	background: #0C0D12;
+}
+.textbox2r {
+	flex-basis: 70%;
+	background: #0C0D12;
+}
+.imgl{
+	flex-basis: 30%;
+	height: 100%;
+}
+
+.imgr{
+	flex-basis: 30%;
+	height: 100%;
+}
+.item2:hover {
+	display: inline-block;
+	position: absolute;
+    top: 0.5%; /* equal to border thickness */
+    left: 0.5%; /* equal to border thickness */
+    width: 99%; /* container height - (border thickness * 2) */
+    height: 99%; /* container height - (border thickness * 2) */
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.item3 {
+	display: inline-block;
+    position: absolute;
+    top: 0.5%; /* equal to border thickness */
+    left: 0.5%; /* equal to border thickness */
+    width: 99%; /* container height - (border thickness * 2) */
+    height: 99%; /* container height - (border thickness * 2) */
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.item3:hover {
+	display: inline-block;
+    position: absolute;
+    top: 0.5%; /* equal to border thickness */
+    left: 0.5%; /* equal to border thickness */
+    width: 99%; /* container height - (border thickness * 2) */
+    height: 99%; /* container height - (border thickness * 2) */
+	background:  #0C0D12;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.canvas {
+	display: flex;
+    position: absolute;
+    top: 1%; /* equal to border thickness */
+    left: 1%; /* equal to border thickness */
+    width: 98%; /* container height - (border thickness * 2) */
+    height: 98%; /* container height - (border thickness * 2) */
+	background: #0C0D12;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.canvas:hover {
+	display: flex;
+    position: absolute;
+    top: 1%; /* equal to border thickness */
+    left: 1%; /* equal to border thickness */
+    width: 98%; /* container height - (border thickness * 2) */
+    height: 98%; /* container height - (border thickness * 2) */
+	background: rgb(237, 203, 13);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+
+/*--- ScrollFade Specific ---*/
+
+.scrollFade {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.scrollFade--visible {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--animate {
+	transition: opacity 0.4s ease-in-out;
+}
+
+/*------*/
+
+@media(max-width: 750px) {
+	body {
+		padding: 100px 25px;
+	}
+
+	.items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.item--wide {
+		grid-column: 1;
+	}
+}

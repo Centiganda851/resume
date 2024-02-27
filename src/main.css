@@ -10,7 +10,15 @@ body {
     height: 100%;
     overflow: hidden; /* Hide scroll bars */
 }
-
+  .container {
+    width: 100vw; /* 100% of viewport width */
+    height: 100vh; /* 100% of viewport height */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 h1 {
 	text-align: center;
 }

@@ -142,6 +142,73 @@ h1 {
 	color: black;
 }
 
+.hexagon-container {
+  width: 500px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  position: relative;
+  margin: auto;
+}
+
+.hexagon {
+  width: 100px;
+  height: 173px;
+  background-color: #ccc;
+  position: absolute;
+}
+
+.central {
+  top: 47%; /* Adjust vertical position */
+  left: 47%; /* Adjust horizontal position */
+}
+
+.hexagon:nth-child(2) {
+  top: 0;
+  left: 25%;
+}
+
+.hexagon:nth-child(3) {
+  top: 50%;
+  left: 0;
+}
+
+.hexagon:nth-child(4) {
+  top: 100%;
+  left: 25%;
+}
+
+.hexagon:nth-child(5) {
+  top: 100%;
+  left: 75%;
+}
+
+.hexagon:nth-child(6) {
+  top: 50%;
+  left: 100%;
+}
+
+.hexagon:nth-child(7) {
+  top: 0;
+  left: 75%;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  top: -86px;
+  border-bottom: 86px solid #ccc;
+}
+
+.hexagon:after {
+  bottom: -86px;
+  border-top: 86px solid #ccc;
+}
 
 /*--- ScrollFade Specific ---*/
 .scrollFade {

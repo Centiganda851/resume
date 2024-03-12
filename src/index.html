@@ -27,6 +27,10 @@
     max-width: 90%; /* Adjust as needed */
     max-height: 90%; /* Adjust as needed */
     text-align: center;
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    transform: rotate(-90deg);
   }
   .hexagon-container {
   width: 500px; /* Adjust width as needed */
@@ -36,46 +40,55 @@
 }
 
 .hexagon {
-  width: 86.6025px;
-  height: 100px;
-  rotate: 90deg;
+  width: 40%;
+  height: 23.094%;
+  transform: rotate(90deg);
   background-color: #ccc;
   position: absolute;
 }
-
+.inside {
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  transform: rotate(0deg);
+  background-color: rgb(204, 102, 102);
+  position: absolute;
+  z-index: 1;
+}
 .central {
-  top: 47%; /* Adjust vertical position */
-  left: 47%; /* Adjust horizontal position */
+  top: 47.5%; /* Adjust vertical position */
+  left: 40%; /* Adjust horizontal position */
 }
 
 .hexagon:nth-child(2) {
-  top: 0;
-  left: 25%;
+  top: 4.5%;
+  left: 40%;
 }
 
 .hexagon:nth-child(3) {
-  top: 50%;
-  left: 0;
+  top: 25%;
+  left: 0%;
 }
 
 .hexagon:nth-child(4) {
-  top: 100%;
-  left: 25%;
+  top: 70%;
+  left: 0%;
 }
 
 .hexagon:nth-child(5) {
-  top: 100%;
-  left: 75%;
+  top: 91%;
+  left: 40%;
 }
 
 .hexagon:nth-child(6) {
-  top: 50%;
-  left: 100%;
+  top: 70%;
+  left: 80%;
 }
 
 .hexagon:nth-child(7) {
-  top: 0;
-  left: 75%;
+  top: 25%;
+  left: 80%;
 }
 
 .hexagon:before,
@@ -83,18 +96,38 @@
   content: '';
   position: absolute;
   width: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  z-index: 0;
 }
 
 .hexagon:before {
-  top: -86px;
-  border-bottom: 86px solid #ccc;
+  top: -57px;
+  border-bottom: 58px solid #ccc;
 }
 
 .hexagon:after {
-  bottom: -86px;
-  border-top: 86px solid #ccc;
+  bottom: -57px;
+  border-top: 58px solid #ccc;
+}
+.inside:before,
+.inside:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  z-index: 1;
+}
+
+.inside:before {
+  top: -50px;
+  border-bottom: 51px solid rgb(204, 102, 102);
+}
+
+.inside:after {
+  bottom: -50px;
+  border-top: 51px solid rgb(204, 102, 102);
 }
 </style>
 </head>
@@ -102,13 +135,17 @@
 
 <div class="container">
   <div class="hexagon-container">
-  <div class="hexagon central"></div>
-  <div class="hexagon"></div>
-  <div class="hexagon"></div>
-  <div class="hexagon"></div>
-  <div class="hexagon"></div>
-  <div class="hexagon"></div>
-  <div class="hexagon"></div>
+  <div class="hexagon central">
+      <div class="content">
+        <div class="title">title<br>  </div>
+      </div>
+  </div>
+  <div class="hexagon"><div class="hexagon inside"> <div class="content">Bio</div></div> </div>
+  <div class="hexagon"><div class="content">Skills </div></div>
+  <div class="hexagon"> <div class="content">Experience </div></div>
+  <div class="hexagon"> <div class="content">Hardware projects</div> </div>
+  <div class="hexagon"> <div class="content">Software projects </div></div>
+  <div class="hexagon"> <div class="content">Quantum </div></div>
 </div>
 </div>
 

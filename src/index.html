@@ -3,149 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scaling Web Page</title>
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Hide scroll bars */
-  }
-  
-  .container {
-    width: 100vw; /* 100% of viewport width */
-    height: 100vh; /* 100% of viewport height */
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .content {
-    max-width: 90%; /* Adjust as needed */
-    max-height: 90%; /* Adjust as needed */
-    text-align: center;
-    top: 40%;
-    left: 20%;
-    position: absolute;
-    transform: rotate(-90deg);
-  }
-  .hexagon-container {
-  width: 500px; /* Adjust width as needed */
-  height: 500px; /* Adjust height as needed */
-  position: relative;
-  margin: auto;
-}
+<title>Shane Tendo</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-.hexagon {
-  width: 40%;
-  height: 23.094%;
-  transform: rotate(90deg);
-  background-color: #ccc;
-  position: absolute;
-}
-.inside {
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  transform: rotate(0deg);
-  background-color: rgb(204, 102, 102);
-  position: absolute;
-  z-index: 1;
-}
-.central {
-  top: 47.5%; /* Adjust vertical position */
-  left: 40%; /* Adjust horizontal position */
-}
-
-.hexagon:nth-child(2) {
-  top: 4.5%;
-  left: 40%;
-}
-
-.hexagon:nth-child(3) {
-  top: 25%;
-  left: 0%;
-}
-
-.hexagon:nth-child(4) {
-  top: 70%;
-  left: 0%;
-}
-
-.hexagon:nth-child(5) {
-  top: 91%;
-  left: 40%;
-}
-
-.hexagon:nth-child(6) {
-  top: 70%;
-  left: 80%;
-}
-
-.hexagon:nth-child(7) {
-  top: 25%;
-  left: 80%;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  z-index: 0;
-}
-
-.hexagon:before {
-  top: -57px;
-  border-bottom: 58px solid #ccc;
-}
-
-.hexagon:after {
-  bottom: -57px;
-  border-top: 58px solid #ccc;
-}
-.inside:before,
-.inside:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  border-left: 90px solid transparent;
-  border-right: 90px solid transparent;
-  z-index: 1;
-}
-
-.inside:before {
-  top: -50px;
-  border-bottom: 51px solid rgb(204, 102, 102);
-}
-
-.inside:after {
-  bottom: -50px;
-  border-top: 51px solid rgb(204, 102, 102);
-}
-</style>
 </head>
 <body>
 
 <div class="container">
   <div class="hexagon-container">
   <div class="hexagon central">
-      <div class="content">
-        <div class="title">title<br>  </div>
+        <div class="content2">
+          Shane Tendo<br>731-313-4500
       </div>
   </div>
-  <div class="hexagon"><div class="hexagon inside"> <div class="content">Bio</div></div> </div>
-  <div class="hexagon"><div class="content">Skills </div></div>
-  <div class="hexagon"> <div class="content">Experience </div></div>
-  <div class="hexagon"> <div class="content">Hardware projects</div> </div>
-  <div class="hexagon"> <div class="content">Software projects </div></div>
-  <div class="hexagon"> <div class="content">Quantum </div></div>
+  <div class="hexagon"><a href="bio.html"><div class="inside in1"> <div class="content">Bio</div></div></a></div>
+  <div class="hexagon"><a href="skills.html"><div class="inside in2"> <div class="content">Skills </div></div></a></div>
+  <div class="hexagon"><a href="experience.html"><div class="inside in3"> <div class="content">Experience </div></div></a></div>
+  <div class="hexagon"><a href="quantum.html"><div class="inside in4"> <div class="content">Quantum </div> </div></a></div>
+  <div class="hexagon"><a href="hardware.html"><div class="inside in5"> <div class="content">Software projects </div></div></a></div>
+  <div class="hexagon"><a href="software.html"><div class="inside in6"> <div class="content">Hardware projects</div></div></a></div>
 </div>
 </div>
 

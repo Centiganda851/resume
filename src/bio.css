@@ -68,7 +68,7 @@ position: absolute;
 	max-width: 400px;
 	margin-right: 10px; /* 10px gap between left and right elements */
   }
-.leftimg,.rightimg img {
+img {
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
@@ -101,16 +101,7 @@ position: absolute;
 	display: grid;
 	animation: fadeInL 1s;
 	  }
-.table {
-padding: 100px;
-	display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 200px;
-  grid-template-rows: fit-content;
-	flex-wrap: wrap;
-	flex-direction: column;
-	width: calc(100% - 200px);
-  }
+
   .textdiv {
 	/*background-color:  #0C0D12;
 	padding: 5px;*/

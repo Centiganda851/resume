@@ -122,7 +122,8 @@ body {
   }
 
 .one {top: 35%;left: 25%;}
-.two {top: 65%;left: 37.5%;}
-.three {top: 35%;left: 50%;}
-.four {top: 65%;left: 62.5%;}
-.five {top: 35%;left: 75%;}
+.two {top: 35%;left: 50%;}
+.three {top: 35%;left: 75%;}
+.four {top: 75%;left: 25%;}
+.five {top: 75%;left: 50%;}
+.six {top: 75%;left: 75%;}

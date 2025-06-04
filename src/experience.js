@@ -3,6 +3,7 @@ const twoBtn = document.querySelector('.blocks.two');
 const threeBtn = document.querySelector('.blocks.three');
 const fourBtn = document.querySelector('.blocks.four');
 const fiveBtn = document.querySelector('.blocks.five');
+const sixBtn = document.querySelector('.blocks.six');
 const backgroundGrey = document.createElement('div');
 const backgroundText = document.createElement('div');
 const borderText = document.createElement('div');
@@ -21,10 +22,11 @@ function reset() {
     middleCam = false;
     setTimeout(() => {
 		oneBtn.style.top = '35%';oneBtn.style.left = '25%';
-		twoBtn.style.top = '65%';twoBtn.style.left = '37.5%';
-		threeBtn.style.top = "35%";threeBtn.style.left = "50%";
-		fourBtn.style.top = "65%";fourBtn.style.left = "62.5%";
-		fiveBtn.style.top = "35%";fiveBtn.style.left = "75%";
+		twoBtn.style.top = '35%';twoBtn.style.left = '50%';
+		threeBtn.style.top = "35%";threeBtn.style.left = "75%";
+		fourBtn.style.top = "75%";fourBtn.style.left = "25%";
+		fiveBtn.style.top = "75%";fiveBtn.style.left = "50%";
+	    	sixBtn.style.top = "75%";threeBtn.style.left = "75%";
     }, 500);
     setTimeout(() => {
         backgroundGrey.style.display = 'none';backgroundText.style.display = 'none';borderText.style.display = 'none';backgroundText.innerHTML = '';
@@ -76,6 +78,13 @@ fourBtn.addEventListener('click', () => {
 	} else {reset();}});
 
 fiveBtn.addEventListener('click', () => {
+	dontclick()
+	if (!middleCam) {
+		backgroundText.innerHTML = '<p>Scorpius Pharmacy with Hakim Kizito and Maureen Birungi. PHP<br><br><br><br><br><br></p>';
+		fiveBtn.style.zIndex = '3';fiveBtn.style.top = "50%";fiveBtn.style.left = "80%";
+		firstclick();
+	} else {reset();}});
+sixBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
 		backgroundText.innerHTML = '<p>Scorpius Pharmacy with Hakim Kizito and Maureen Birungi. PHP<br><br><br><br><br><br></p>';

@@ -33,16 +33,24 @@ position: absolute;
     background-color:  #0C0D12;
     color: #ffffff;
   }
-  .container {
+ /* .container {
 	display: flex;
 	flex-direction: row;
-	justify-content: center; /* Center the elements horizontally */
-	align-items: center; /* Center the elements vertically */
-	height: 100vh; /* Adjust as needed */
+	justify-content: center; /* Center the elements horizontally *
+	align-items: center; /* Center the elements vertically *
+	height: 100vh; /* Adjust as needed *
   	justify-content: center;
  	padding: 60px 40px;
   	gap: 40px;
-  }
+  }*/
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 40px;
+}
   
   .left-element, .right-element {
 	/* display: flex;

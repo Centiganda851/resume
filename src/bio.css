@@ -69,7 +69,7 @@ position: absolute;
 img {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.25);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
 }
   .menumininow {
     width: 100%;

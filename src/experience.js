@@ -57,7 +57,7 @@ twoBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
 	backgroundText.innerHTML = '<p>iQuHack was my first ever hackathon, and it was quantum. My team designed an algorithm for QuantumRings through Qbraid to enable the efficient factorization of large semiprime numbers.<br><br><br><br><br><br></p>';
-	twoBtn.style.top = '50%';twoBtn.style.zIndex = '3';twoBtn.style.left = '20%';
+	twoBtn.style.top = '35%';twoBtn.style.zIndex = '3';
 	firstclick();
 	} else {reset();}});
 
@@ -65,7 +65,7 @@ threeBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
 		backgroundText.innerHTML = '<p>Client support at the Union University library. Aided with finding resources, answering questions and solving any problems that came up.<br><br><br><br><br><br></p>';
-		threeBtn.style.top = '25%';threeBtn.style.zIndex = '3';
+		threeBtn.style.top = '25%';threeBtn.style.zIndex = '3';threeBtn.style.left = '80%';
 		firstclick();
 	} else {reset();}});
 
@@ -73,7 +73,7 @@ fourBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
 		backgroundText.innerHTML = '<p>Scorpius Pharmacy with Hakim Kizito and Maureen Birungi. PHP<br><br><br><br><br><br><br><br></p>';
-		fourBtn.style.zIndex = '3';fourBtn.style.top = "50%";fourBtn.style.left = "80%";
+		fourBtn.style.zIndex = '3';fourBtn.style.top = "50%";fourBtn.style.left = "20%";
 		firstclick();
 	} else {reset();}});
 
@@ -81,7 +81,7 @@ fiveBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
 		backgroundText.innerHTML = '<p>Qubit by Qubit summer camp 2021: Set up by IBM quantum, studied under Dr. Akshay Agarwal and Dr. Giselle Fontes Evilsizer<br></p>';
-		fiveBtn.style.zIndex = '3';fiveBtn.style.top = "50%";fiveBtn.style.left = "80%";
+		fiveBtn.style.zIndex = '3';fiveBtn.style.top = "85%";
 		firstclick();
 	} else {reset();}});
 sixBtn.addEventListener('click', () => {

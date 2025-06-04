@@ -63,10 +63,8 @@ position: absolute;
   color: #cccccc;
 }
   .leftimg, .rightimg {
-	display: flex;
-	align-items: center;
 	max-width: 400px;
-	margin-right: 10px; /* 10px gap between left and right elements */
+	flex: 1;
   }
 img {
   width: 100%;

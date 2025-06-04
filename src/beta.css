@@ -26,8 +26,7 @@ body, html {
     	background-color:  #0C0D12;
     	color: #ffffff;
 }
-.now {background-color:  rgb(237, 203, 13);}
- .menumini:hover {background-color: rgb(237, 203, 13);}
+.now, .menumini:hover {background-color:  rgb(237, 203, 13);}
 
 .container {
   display: flex;
@@ -54,10 +53,10 @@ img {width: 100%;border-radius: 16px;box-shadow: 0 0 20px rgba(255, 215, 0, 0.15
 	display: grid;animation: fadeInL 1s;
 }
 
-/*--- SideFades ---*/
-.fadeleft{animation: fadeInL 1s;}
-.faderight{animation: fadeInR 1s;}
-  @keyframes fadeInL {
+/*--- Fades ---*/
+.leftimg{animation: fadeInL 1s;}
+.rightimg{animation: fadeInR 1s;}
+@keyframes fadeInL {
 	from {opacity: 0;transform: translateX(-100%);	}
 	to {opacity: 1;transform: translateX(0);}
   }

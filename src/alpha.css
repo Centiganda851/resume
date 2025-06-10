@@ -29,7 +29,7 @@ background-size: cover;
   z-index: 10;
   font-size: 40px;
 }
-.content2 {
+.centrecontent {
   max-width: 90%; /* Adjust as needed */
   max-height: 90%; /* Adjust as needed */
   text-align: center;

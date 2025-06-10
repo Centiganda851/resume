@@ -72,7 +72,7 @@ threeBtn.addEventListener('click', () => {
 fourBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
-		backgroundText.innerHTML = '<p>Scorpius Pharmacy with Hakim Kizito and Maureen Birungi. PHP<br><br><br><br><br><br><br><br></p>';
+		backgroundText.innerHTML = '<p>Designed a PHP-based website for monitoring inventory, employees and sales for Scorpius Pharmacy.<br><br><br><br><br><br><br><br></p>';
 		fourBtn.style.zIndex = '3';fourBtn.style.top = "50%";fourBtn.style.left = "20%";
 		firstclick();
 	} else {reset();}});
@@ -80,14 +80,14 @@ fourBtn.addEventListener('click', () => {
 fiveBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
-		backgroundText.innerHTML = '<p>Qubit by Qubit summer camp 2021: Set up by IBM quantum, studied under Dr. Akshay Agarwal and Dr. Giselle Fontes Evilsizer<br></p>';
+		backgroundText.innerHTML = '<p>Set up by IBM quantum in partnership with others, I navigated through a quantum computer with Dr. Akshay Agarwal and Dr. Giselle Fontes Evilsizer.<br> Went into detail at the qubit, gate, system and algorithm levels.</p>';
 		fiveBtn.style.zIndex = '3';fiveBtn.style.top = "85%";
 		firstclick();
 	} else {reset();}});
 sixBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
-		backgroundText.innerHTML = '<p>Summer internship 2021: Aga Khan Development Network IT Department<br>Supervisors:<br> 1. Sanjeeb Mohanty<br> 2. Eduardo Nhancale <br> 3. Alex Oyugi <br>Understanding what makes a campus area network including company emails, <br>configuring "Bring your own devices", secure wifi, linking audio system, <br>fibre optic cables , server maintenance. Quote from Mr. Alex:<br> "Always innovate in this industry. Keep refreshing yourself to be relevant each <br>day."<br></p>';
+		backgroundText.innerHTML = '<p>Summer internship 2021: Aga Khan Development Network IT Department<br>Supervisors:<br> 1. Mr. Sanjeeb Mohanty<br> 2. Mr. Eduardo Nhancale <br> 3. Mr. Alex Oyugi <br>Understanding what makes a campus area network including company emails, <br>configuring "Bring your own devices", secure wifi, linking audio system, <br>fibre optic cables , server maintenance. <br></p>';
 		sixBtn.style.zIndex = '3';sixBtn.style.top = "50%";sixBtn.style.left = "80%";
 		firstclick();
 	} else {reset();}});

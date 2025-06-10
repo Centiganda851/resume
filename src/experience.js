@@ -57,7 +57,7 @@ twoBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
 	backgroundText.innerHTML = '<p>iQuHack was my first ever hackathon, and it was quantum. My team designed an algorithm for QuantumRings through Qbraid to enable the efficient factorization of large semiprime numbers.<br><br><br><br><br><br></p>';
-	twoBtn.style.top = '35%';twoBtn.style.zIndex = '3';
+	twoBtn.style.top = '25%';twoBtn.style.zIndex = '3';
 	firstclick();
 	} else {reset();}});
 
@@ -65,7 +65,7 @@ threeBtn.addEventListener('click', () => {
 	dontclick()
 	if (!middleCam) {
 		backgroundText.innerHTML = '<p>Client support at the Union University library. Aided with finding resources, answering questions and solving any problems that came up.<br><br><br><br><br><br></p>';
-		threeBtn.style.top = '25%';threeBtn.style.zIndex = '3';threeBtn.style.left = '80%';
+		threeBtn.style.top = '50%';threeBtn.style.zIndex = '3';threeBtn.style.left = '80%';
 		firstclick();
 	} else {reset();}});
 

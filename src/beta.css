@@ -43,7 +43,7 @@ body, html {
 }
 
 .textdiv h2 {color: #f8d253;font-size: 28px;margin-bottom: 8px;}
-.textdiv p {font-size: 17px;line-height: 1.6;color: #cccccc;}
+.textdiv p {font-size: 20px;line-height: 1.6;color: #cccccc;}
 .leftimg, .rightimg {max-width: 400px;flex: 1;}
 img {width: 100%;border-radius: 16px;box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);}
 

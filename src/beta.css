@@ -1,73 +1,9 @@
-body, html {
-	font-family: 'Segoe UI';
-    	background-color: #000000;
-	background-image: url('alpha52.jpeg');
-	background-size: cover;
-	color:  #e6e6e6;
-  	background-attachment: fixed; /* Fixes the background image */
-}
-.menu {
-	position: absolute;
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	grid-gap: 10px;
-    	top: 0; left: 0;
-    	width: calc(100% - 20px);height: 50px;
-    	background-color: #4e4e4f;
-    	padding: 0px;margin: 0;
-	border-bottom: 10px solid #4e4e4f;border-top: 10px solid #4e4e4f;
-	border-left: 10px solid #4e4e4f;border-right: 10px solid #4e4e4f;
-}
-.menumini {
-    	width: 100%;height: 100%;
-    	display: flex;
-	text-align: center;justify-content: center;
-	align-items: center;
-    	background-color:  #0C0D12;
-    	color: #ffffff;
-}
-.now, .menumini:hover {background-color:  rgb(237, 203, 13);}
+@import url('common.css');
 
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 60px 40px;gap: 40px;
-}
-  
-.left-element, .right-element {
-	flex: 2;display: flex;
-	max-width: 600px;gap: 32px;
-  	flex-direction: column;	
+body {
+  background-image: url('alpha52.jpeg');
 }
 
-.textdiv h2 {color: #f8d253;font-size: 28px;margin-bottom: 8px;}
-.textdiv p {font-size: 20px;line-height: 1.6;color: #cccccc;}
-.leftimg, .rightimg {max-width: 400px;flex: 1;}
-img {width: 100%;border-radius: 16px;box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);}
-
-.skilltree {padding: 30px;position: absolute;
-	left: 10%;
-	top: calc(50% - 400px);
-	display: grid;animation: fadeInL 1s;
+.textdiv p {
+  color: #cccccc;
 }
-
-/*--- Fades ---*/
-.leftimg{animation: fadeInL 1s;}
-.rightimg{animation: fadeInR 1s;}
-@keyframes fadeInL {
-	from {opacity: 0;transform: translateX(-100%);	}
-	to {opacity: 1;transform: translateX(0);}
-  }
-@keyframes fadeInR {
-	from {opacity: 0;transform: translateX(200%);}
-	to {opacity: 1;transform: translateX(0%);}
-  }
-
-/*--- ScrollFade Specific ---*/
-.scrollFade {opacity: 1;pointer-events: all;}
-.scrollFade--hidden {opacity: 0;pointer-events: none;}
-.scrollFade--visible {opacity: 1;pointer-events: all;}
-.scrollFade--animate {transition: opacity 0.4s ease-in-out;}
-

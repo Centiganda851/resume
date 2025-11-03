@@ -1,35 +1,41 @@
 const buttons = [
   {
     selector: '.blocks.one',
-    text: 'An internship at H+M allowed me to design the electrical layouts for distribution centers and heavy industrial factories. Tasks included creating one line diagrams, making models in Revit and the layouts of lights and receptacles.',
+    text: 'During my internship at H+M, I designed electrical layouts for large distribution centers and industrial facilities, producing one-line diagrams, Revit models, and detailed lighting and receptacle plans.',
     top: '50%',
     left: '20%'
   },
   {
     selector: '.blocks.two',
-    text: 'iQuHack was my first ever hackathon. My team designed an algorithm for QuantumRings through Qbraid to enable the efficient factorization of large semiprime numbers.',
+    text: 'At iQuHack, my first hackathon, my team built a quantum algorithm for QuantumRings using Qbraid, aimed at efficiently factoring large semiprime numbers through hybrid quantum-classical methods. We ultimately managed to factor the number 143.',
     top: '25%'
   },
   {
     selector: '.blocks.three',
-    text: 'Client support at the Union University library. Aided with finding resources, answering questions and solving any problems that came up.',
+    text: 'Provided client support at Union University Library, assisting patrons in locating academic resources, answering research-related questions, and resolving technical or access issues promptly and professionally.',
     top: '50%',
     left: '80%'
   },
   {
     selector: '.blocks.four',
-    text: 'Designed a PHP-based website for monitoring inventory, employees and sales for Scorpius Pharmacy.',
+    text: 'Developed a dynamic PHP-based web application for Scorpius Pharmacy to monitor inventory, track employee activity, and manage sales data, improving efficiency and real-time business oversight.',
     top: '50%',
     left: '20%'
   },
   {
     selector: '.blocks.five',
-    text: 'Set up by IBM Quantum in partnership with others, I navigated through a quantum computer with Dr. Akshay Agarwal and Dr. Giselle Fontes Evilsizer, learning about qubits, gates and algorithms.',
+    text: 'Participated in an IBM Quantum program led by Dr. Akshay Agarwal and Dr. Giselle Fontes Evilsizer, exploring quantum computing fundamentals, including qubits, quantum gates, and core computational algorithms such as Shor, Grover and Deutsch-Jozsa.',
     top: '85%'
   },
   {
     selector: '.blocks.six',
-    text: 'Summer internship 2021 at the Aga Khan Development Network IT Department learning about campus networks, secure wifi and server maintenance.',
+    text: 'Completed a 2021 summer internship with the Aga Khan Development Network IT Department, gaining hands-on experience in campus network configuration, secure Wi-Fi implementation, and server maintenance operations.',
+    top: '50%',
+    left: '80%'
+  },
+  {
+    selector: '.blocks.seven',
+    text: 'Participated in a second quantum hackathon focused on leveraging quantum computing to train machine learning models capable of classifying tic-tac-toe outcomes—identifying wins, losses, and draws with 52% accuracy.',
     top: '50%',
     left: '80%'
   }

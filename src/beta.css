@@ -1,9 +1,5 @@
 @import url('common.css');
 
 body {
-  background-image: url('alpha52.jpeg');
-}
-
-.textdiv p {
-  color: #cccccc;
+  background-image: url('images/background.jpeg');
 }

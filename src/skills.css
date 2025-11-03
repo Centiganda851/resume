@@ -1,0 +1,80 @@
+@import url('common.css');
+
+body {
+  background-image: url('images/background.jpeg');
+}
+
+.textdiv p {
+  color: #cccccc;
+}
+
+.tablegrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 40px;
+}
+.skillbox {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(237, 203, 13);
+    transform: rotate(90deg);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s;
+
+}
+.skillbox:before, .skillbox:after {
+content: '';
+position: absolute;
+width: 0;
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+z-index: 0;
+animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.skillbox:before {top: -19.5px;border-bottom: 20px solid rgb(237, 203, 13);}
+.skillbox:after {bottom: -19.5px;border-top: 20px solid rgb(237, 203, 13);}
+
+.skills {
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  translate: (50%, 50%);
+  background-color: #0C0D12;
+  transform: rotate(0deg);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills:before, .skills:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  z-index: 1;
+
+}
+.skills:before {
+    top: -19.5px;
+    border-bottom: 20px solid #0C0D12;}
+.skills:after {
+    bottom: -19.5px;
+    border-top: 20px solid #0C0D12;}
+
+.words{
+  transform: rotate(-90deg);
+  position: absolute;
+  z-index: 2;
+}

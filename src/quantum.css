@@ -1,9 +1,17 @@
 @import url('common.css');
 
 body {
-  background-image: url('alpha52-blue.JPG');
+  background-image: url('alpha52.jpeg');
 }
 
 .textdiv p {
-  color: #e6e6e6;
+  color: #cccccc;
+  background-color: rgba(0, 0, 0,0.7);
+  padding:20px;
+  
+}
+
+.textdiv h2{
+  background-color: rgba(0, 0, 0,0.7);
+  padding:20px;
 }

@@ -1,6 +1,5 @@
 body, html {
   font-family: 'Segoe UI';
-  background-color: #000;
   color: #e6e6e6;
   background-size: cover;
   background-attachment: fixed;
@@ -63,9 +62,10 @@ body, html {
   margin-bottom: 8px;
 }
 
-.textdiv p {
+.textdiv p,ul,li {
   font-size: 20px;
   line-height: 1.6;
+  color: #cccccc;
 }
 
 .leftimg,
@@ -80,14 +80,6 @@ img {
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
 }
 
-.skilltree {
-  padding: 30px;
-  position: absolute;
-  left: 10%;
-  top: calc(50% - 400px);
-  display: grid;
-  animation: fadeInL 1s;
-}
 
 .leftimg {
   animation: fadeInL 1s;

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Shane Tendo</title>
-	<link rel="stylesheet" type="text/css" href="beta.css">
+	<link rel="stylesheet" type="text/css" href="skills.css">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="description" content="">
 		<meta name="keywords" content="">
@@ -32,11 +32,42 @@
             <a href = "quantum.html">
                 <div class="menumini">Quantum</div>
                 </a>
-</div>
+    </div>
 <br>
 <br>
-<div class="skilltree"><img src="Flowchart.jpeg" height="800" alt="Skill tree"></div>
-<!-- Skill tree: https://lucid.app/lucidchart/726101d7-6aee-4b36-928a-0d8cfe89d199/edit?viewport_loc=-1020%2C-122%2C3680%2C1923%2C0_0&invitationId=inv_16228876-304b-4441-8f7d-fd0cf3bf0732 -->
+<div class="tablegrid" id = "skilltable">
 </div>
+
+<script>
+const skills = [
+'Qiskit','Git','Python','Docker',
+'Matplotlib','Numpy','Scipy',
+'HTML', 'CSS', 'JavaScript', 'PHP',
+'Creo','Revit','AutoCAD','Fusion 360','Simscale','Altium',
+'MATLAB','Microsoft Suite', 'Google Suite',
+'Windows',  
+'Quantum Algorithms','Math','French','German',
+'Teamwork','Leadership','Event planning',
+'Digital logic','Control systems',
+'Oscilloscopes', '3D printing',
+'Public speaking',
+];
+const ul = document.getElementById('skilltable');
+
+for (let i = 0; i < skills.length; i++) {
+  const border = document.createElement('div');
+  border.className = "skillbox";
+  const core = document.createElement('div');
+  core.className = "skills";
+  const word = document.createElement('div');
+  word.className = "words";
+  word.textContent = skills[i];
+  core.appendChild(word);
+  border.appendChild(core);
+  ul.appendChild(border);
+}
+</script>
 </body>
 </html>
+
+

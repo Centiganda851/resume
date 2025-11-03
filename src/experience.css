@@ -1,7 +1,7 @@
 @import url('common.css');
 
 body {
-  background-image: url('alpha52.jpeg');
+  background-image: url('images/background.jpeg');
 }
 
 .grey {
@@ -22,19 +22,20 @@ body {
   top: 50%;
   left: 50%;
   opacity: 0;
-  background-color: #2B2B2B;
+  background-color: #0C0D12;
   display: none;
   transition: transform 1s, opacity 3s;
+  z-index: 5;
 }
 
 .border {
   position: fixed;
-  padding: 10px;
+  padding: 7px;
   top: 50%;
   left: 50%;
   width: 40%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 4;
   opacity: 0;
   background-color: rgb(237, 203, 13);
   transition: transform 1s, opacity 3s;
@@ -43,44 +44,43 @@ body {
 }
 
 .title {
-  height: 90%;
-  width: 90%;
-  top: 50%;
-  left: 50%;
+  height: 95%;
+  width: 95%;
   padding: 5px;
   font-size: 26px;
   color: white;
   z-index: 10;
-  transform: translate(-50%, -50%);
-  background-color: #2B2B2B;
+  background-color: #0C0D12;
   display: flex;
   clip-path: polygon(25% 2%, 75% 2%, 98% 25%, 98% 75%, 75% 98%, 25% 98%, 2% 75%, 2% 25%);
   shape-outside: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
-  position: absolute;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .blocks {
-  height: 250px;
-  width: 250px;
+  aspect-ratio: 1/1;
+  width: 80%;
   padding: 5px;
   transition: top 2s, left 2s, bottom 2s, right 2s, height 2s, width 2s, transform 2s;
   z-index: 1;
-  transform: translate(-50%, -50%);
+  display:flex;
   background-color: rgb(237, 203, 13);
   clip-path: polygon(25% 2%, 75% 2%, 98% 25%, 98% 75%, 75% 98%, 25% 98%, 2% 75%, 2% 25%);
   shape-outside: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
-  position: absolute;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.one { top: 35%; left: 25%; }
-.two { top: 35%; left: 50%; }
-.three { top: 35%; left: 75%; }
-.four { top: 75%; left: 25%; }
-.five { top: 75%; left: 50%; }
-.six { top: 75%; left: 75%; }
+.exptable {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 40px;
+}

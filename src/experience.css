@@ -84,3 +84,8 @@ body {
   padding: 60px 40px;
   gap: 40px;
 }
+.words{
+  transform: rotate(-90deg);
+  position: absolute;
+  z-index: 2;
+}

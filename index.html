@@ -1,34 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shane Tendo</title>
-<link rel="stylesheet" type="text/css" href="alpha.css">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shane Tendo — graduate researcher working across quantum computing, scientific software, and computational infrastructure.">
+  <meta name="theme-color" content="#080808">
+  <title>Shane Tendo — Quantum Computing & Scientific Software</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="monogram" href="#top" aria-label="Shane Tendo, home">ST<span></span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#profile">Profile</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Connect <span aria-hidden="true">↗</span></a>
+    </header>
 
-<div class="container">
-  <!--div class="hexagon-container"-->
-  <div class="hexagon central">
-        <div class="centrecontent">
-          shanetendoj<br>@gmail.com
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Graduate researcher · Quantum computing</p>
+          <h1 id="hero-title">Building at the edge of <em>physics</em> and <em>computation.</em></h1>
+          <p class="hero-intro">I’m Shane Tendo, an electrical engineer and graduate researcher applying quantum computing to industrial optimization, scientific software, and practical engineering problems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#experience">View capabilities <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-mark" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hex hex-large"><span>Ψ</span></div>
+          <div class="hex hex-small"></div>
+          <div class="coordinate coordinate-x">01 / Q</div>
+          <div class="coordinate coordinate-y">ST — 26</div>
+        </div>
+
+        <div class="hero-foot">
+          <span>Research</span><i></i><span>Engineering</span><i></i><span>Infrastructure</span>
+        </div>
+      </section>
+
+      <section class="profile section" id="profile" aria-labelledby="profile-title">
+        <div class="section-label"><span>01</span> Profile</div>
+        <div class="section-grid">
+          <div>
+            <p class="kicker">Curiosity, made practical.</p>
+            <h2 id="profile-title">I follow difficult questions all the way to working systems.</h2>
+          </div>
+          <div class="profile-body">
+            <p class="lead">I graduated summa cum laude in electrical and electronics engineering with a minor in physics, and now investigate quantum algorithms for supply-chain resilience as a graduate research assistant at Clemson University.</p>
+            <p>Quantum computing brings together the mathematics, physics, computing, and engineering that have shaped my education. I pair a first-principles understanding of physical systems with hands-on experience in quantum circuits, numerical simulation, automation, and electrical design. I want to help move quantum technology from promising theory toward useful systems and new industrial applications.</p>
+            <div class="principles" aria-label="Working principles">
+              <div><strong>01</strong><span>Think from first principles</span></div>
+              <div><strong>02</strong><span>Build to understand</span></div>
+              <div><strong>03</strong><span>Design for access</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="research section" id="research" aria-labelledby="research-title">
+        <div class="section-label"><span>02</span> Research &amp; publications</div>
+        <div class="research-heading">
+          <div>
+            <p class="kicker">Current direction</p>
+            <h2 id="research-title">Ideas become useful when they survive contact with real systems.</h2>
+          </div>
+          <p>Selected quantum, software, and engineering projects show how I learn: model the problem, build a working system, and measure what it can do.</p>
+        </div>
+
+        <div class="interest-grid">
+          <article class="interest-card featured">
+            <span class="card-number">01</span>
+            <div class="hex-icon">Q</div>
+            <h3>Project Cross</h3>
+            <p>Built a quantum machine-learning circuit to classify tic-tac-toe outcomes, achieving 52% accuracy on IQM’s Sirius and Garnet quantum processors.</p>
+            <ul><li>Quantum machine learning</li><li>IQM hardware</li><li>Team project</li></ul>
+          </article>
+          <article class="interest-card">
+            <span class="card-number">02</span>
+            <div class="hex-icon">⌘</div>
+            <h3>Project Prime</h3>
+            <p>Developed a Qiskit and Python circuit for hybrid quantum-classical semiprime factorization at iQuHack 2025, scaling the approach to eight bits and factoring 143.</p>
+            <ul><li>Qiskit</li><li>Python</li><li>Quantum algorithms</li></ul>
+          </article>
+          <article class="interest-card">
+            <span class="card-number">03</span>
+            <div class="hex-icon">⌁</div>
+            <h3>Project PyRevit</h3>
+            <p>Created Python and Revit API tools that place lighting, synchronize one-line diagrams with panels, and remove wire chamfers from repetitive design workflows.</p>
+            <ul><li>Python automation</li><li>Revit API</li><li>Electrical design</li></ul>
+          </article>
+        </div>
+
+        <div class="publications-panel">
+          <div>
+            <p class="kicker">Engineering studies</p>
+            <h3>Hardware &amp; simulation</h3>
+          </div>
+          <div class="publication-placeholder project-list">
+            <article>
+              <span>Project Compressor · Senior design</span>
+              <p>Developed MATLAB fluid-dynamics simulations for a three-person senior design team optimizing air-compressor valve-plate geometry, and delivered a rubric for future designs.</p>
+              <a href="https://github.com/Centiganda851/Compressor-simulator" target="_blank" rel="noreferrer">View repository ↗</a>
+            </article>
+            <article>
+              <span>Experiment Tunnel · 2024</span>
+              <p>Built an experimental system using load cells and Bluetooth-enabled Arduinos to measure drag on an obstacle mounted to a vehicle traveling at 40 mph.</p>
+            </article>
+            <article>
+              <span>Project Scorpius · 2021–2023</span>
+              <p>Built and maintained an HTML, CSS, and PHP application for Scorpius Pharmacy to manage inventory, suppliers, employee activity, and sales.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section" id="experience" aria-labelledby="experience-title">
+        <div class="section-label"><span>03</span> Experience &amp; capabilities</div>
+        <div class="experience-layout">
+          <div class="experience-intro">
+            <p class="kicker">A wider view than a résumé</p>
+            <h2 id="experience-title">Researcher’s rigor. Builder’s range.</h2>
+            <p>My experience spans quantum research, electrical design, software development, teaching, and service—an unusually useful mix for interdisciplinary teams.</p>
+          </div>
+
+          <div class="timeline" aria-label="Selected experience">
+            <article>
+              <div class="timeline-date">2026—</div>
+              <div>
+                <h3>Graduate Researcher</h3>
+                <p class="timeline-type">Clemson University · Tucker Research Group</p>
+                <p>Investigating applications of quantum algorithms to industrial optimization and supply-chain resilience.</p>
+              </div>
+            </article>
+            <article>
+              <div class="timeline-date">2026</div>
+              <div>
+                <h3>iQuHack</h3>
+                <p class="timeline-type">Quantum hackathon · Circuit development</p>
+                <p>Returned to investigate qubit entanglement with Bell pairs in a competitive challenge, contributing quantum-circuit expertise.</p>
+              </div>
+            </article>
+            <article>
+              <div class="timeline-date">2025</div>
+              <div>
+                <h3>Electrical Design Intern</h3>
+                <p class="timeline-type">H+M Industrial EPC</p>
+                <p>Designed electrical layouts for distribution centers and industrial facilities, producing one-line diagrams, Revit models, and lighting and receptacle plans.</p>
+              </div>
+            </article>
+            <article>
+              <div class="timeline-date">2025</div>
+              <div>
+                <h3>Quantum Hackathons</h3>
+                <p class="timeline-type">iQuHack · South Carolina Quantathon</p>
+                <p>Built a semiprime-factorization workflow at iQuHack and a quantum machine-learning classifier for tic-tac-toe outcomes at the South Carolina Quantathon.</p>
+              </div>
+            </article>
+            <article>
+              <div class="timeline-date">2023–26</div>
+              <div>
+                <h3>Library Support &amp; Peer Tutor</h3>
+                <p class="timeline-type">Union University</p>
+                <p>Helped patrons find academic resources and resolve technical issues, while tutoring students in physics and engineering problem-solving.</p>
+              </div>
+            </article>
+            <article>
+              <div class="timeline-date">2021–22</div>
+              <div>
+                <h3>Web Developer</h3>
+                <p class="timeline-type">Scorpius Pharmacy</p>
+                <p>Developed a PHP web application that improved oversight of inventory, suppliers, employee activity, and sales data.</p>
+              </div>
+            </article>
+            <article>
+              <div class="timeline-date">2021</div>
+              <div>
+                <h3>IT Intern</h3>
+                <p class="timeline-type">Aga Khan Development Network</p>
+                <p>Gained hands-on experience with campus network configuration, secure Wi-Fi implementation, and server maintenance.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="capability-strip">
+          <div>
+            <span>Quantum</span>
+            <p>Qiskit · quantum algorithms · circuit simulation · quantum ML</p>
+          </div>
+          <div>
+            <span>Scientific Python</span>
+            <p>Python · NumPy · SciPy · Matplotlib · Gurobi · MATLAB</p>
+          </div>
+          <div>
+            <span>Design &amp; systems</span>
+            <p>Git · Docker · digital logic · control systems · Revit · AutoCAD · Altium</p>
+          </div>
+          <div>
+            <span>Collaboration</span>
+            <p>Leadership · teamwork · debate · public speaking · event planning</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div>
+        <p class="eyebrow"><span></span> Open to quantum-industry opportunities</p>
+        <h2>Let’s build what comes next.</h2>
+        <p>For research, technical roles, and ambitious conversations at the intersection of physics and computing.</p>
       </div>
+      <a class="button button-primary" href="mailto:shanetendoj@gmail.com">shanetendoj@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="footer-base"><span>© <span id="year"></span> Shane Tendo</span><a href="#top">Back to top ↑</a></div>
+    </footer>
   </div>
-  <div class="hexagon"><a href="bio.html"><div class="inside in1"> <div class="content">Bio</div></div></a></div>
-  <div class="hexagon"><a href="skills.html"><div class="inside in2"> <div class="content">Skills </div></div></a></div>
-  <div class="hexagon"><a href="experience.html"><div class="inside in3"> <div class="content">Experience </div></div></a></div>
-  <div class="hexagon"><a href="quantum.html"><div class="inside in4"> <div class="content">Quantum </div> </div></a></div>
-  <div class="hexagon"><a href="software.html"><div class="inside in5"> <div class="content">Software projects </div></div></a></div>
-  <div class="hexagon"><a href="hardware.html"><div class="inside in6"> <div class="content">Hardware projects</div></div></a></div>
-<!--/div-->
-</div>
-
-  
+  <script src="script.js"></script>
 </body>
 </html>

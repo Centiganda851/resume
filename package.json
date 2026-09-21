@@ -1,7 +1,8 @@
 {
-  "name": "vanilla-basic",
+  "name": "shane-tendo-portfolio",
   "version": "1.0.0",
-  "scripts": { 
-    "start": "sirv ./src public --cors --single --no-clear --port 8000"
-  }
+  "scripts": {
+    "start": "python3 -m http.server 8000"
+  },
+  "description": "Shane Tendo portfolio"
 }

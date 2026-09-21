@@ -134,6 +134,10 @@ h2 { max-width: 760px; font-size: clamp(2.8rem, 5.2vw, 5rem); }
 .publication-placeholder > span { color: var(--gold); font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; }
 .publication-placeholder p { color: #aaa499; margin: .8rem 0; }
 .publication-placeholder small { color: #666157; font-size: .65rem; letter-spacing: .14em; text-transform: uppercase; }
+.project-list article + article { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.project-list article > span { color: var(--gold); font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; }
+.project-list a { color: var(--gold-bright); font-size: .68rem; letter-spacing: .12em; text-decoration: none; text-transform: uppercase; }
+.project-list a:hover { text-decoration: underline; }
 
 .experience-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(4rem, 9vw, 10rem); }
 .experience-intro { position: sticky; top: 3rem; align-self: start; }
